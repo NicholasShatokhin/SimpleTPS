@@ -14,6 +14,9 @@ export(float, 0, 90) var max_pitch : float = 90
 var velocity : Vector3
 var y_velocity : float
 
+var inventory_resource = load("res://Inventory/Inventory.gd")
+var inventory = inventory_resource.new()
+
 onready var camera_pivot = $CameraPivot
 onready var camera = $CameraPivot/CameraBoom/Camera
 
